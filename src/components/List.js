@@ -11,7 +11,7 @@ class List extends Component {
 		}
 		return (
 			<div>
-				<h3 className="title is-3">投稿一覧</h3>
+				<h3 className="title is-3">List of past posts</h3>
 				<ul>{postList}</ul>
 			</div>
 		)

@@ -105,29 +105,29 @@ class App extends Component {
 	  		<div className="hero is-info is-bold">
 	  			<div className="hero-body">
 	  				<div className="container">
-			 			<h1 className="title">Decentralized BBS</h1>
-			 			<h2 className="subtitle">匿名掲示板</h2>
+			 			<h1 className="title">DAO message BBS</h1>
+			 			<h2 className="subtitle">DAO message BB</h2>
 		 			</div>
 	 			</div>
 	 		</div>
 	 		<div className="section">
 	 			<div className="container">
-		 			<h3 className="title is-3">投稿フォーム</h3>
+		 			<h3 className="title is-3">POST area</h3>
 		 			<div className="columns">
 			 			<form className="column is-half box" action="javascript:void(0)" onSubmit={this.onSubmit}>
 			 				<div className="field">
-			 					<label className="label">タイトル</label>
+			 					<label className="label">Title</label>
 			 					<div className="control">
 				 					<input className="input" type="text" value={this.state.title} onChange={this.onChange}  />
 			 					</div>
 			 				</div>
 			 				<div className="field">
-			 					<label className="label">本文</label>
+			 					<label className="label">Text</label>
 			 					<div className="control">
 				 					<textarea className="textarea" onChange={this.onTextAreaChange} value={this.state.content}></textarea>
 				 				</div>
 			 				</div>
-				 			<input className="button is-primary" type="submit" value="投稿する" />
+				 			<input className="button is-primary" type="submit" value="Submit" />
 			 			</form>
 		 			</div>
 	 			</div>
