@@ -4190,7 +4190,7 @@
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-03-09T14:30:11.870Z",
+  "updatedAt": "2019-03-10T08:11:14.714Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {

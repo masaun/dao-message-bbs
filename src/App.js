@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react'
 import moment from 'moment'
-import PostTokenContract from '../build/contracts/PostToken.json'
+import PostTokenContract from '../build/contracts/PostToken.json'  // Read Contract
 import List from './components/List'
 import getWeb3 from './utils/getWeb3'
 
@@ -47,6 +47,7 @@ class App extends Component {
 	this.setState({ content: event.target.value })
   }
 
+  /* Submit */ 
   onSubmit() {
     this.state.web3.eth.getAccounts((error, accounts) => {
       postToken.deployed().then((instance) => {
@@ -106,13 +107,13 @@ class App extends Component {
 	  			<div className="hero-body">
 	  				<div className="container">
 			 			<h1 className="title">DAO message BBS</h1>
-			 			<h2 className="subtitle">DAO message BB</h2>
+			 			<h2 className="subtitle">DAO message BBS</h2>
 		 			</div>
 	 			</div>
 	 		</div>
 	 		<div className="section">
 	 			<div className="container">
-		 			<h3 className="title is-3">POST area</h3>
+		 			<h3 className="title is-3">Posts area</h3>
 		 			<div className="columns">
 			 			<form className="column is-half box" action="javascript:void(0)" onSubmit={this.onSubmit}>
 			 				<div className="field">

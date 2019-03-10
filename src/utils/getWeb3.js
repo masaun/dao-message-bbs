@@ -11,7 +11,7 @@ let getWeb3 = new Promise(function(resolve, reject) {
       // Use Mist/MetaMask's provider.
       //web3 = new Web3(web3.currentProvider)
       Web3.providers.HttpProvider.prototype.sendAsync = Web3.providers.HttpProvider.prototype.send
-      var web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
+      var web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');  // Ganache-GUI
       web3 = new Web3(web3Provider);
 
       results = {
