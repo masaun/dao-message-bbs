@@ -1,11 +1,25 @@
 # DAO message BBS
-1. Build Javascript and CSS
+1. module install
+```
+$  yarn install
+```
+
+2. Start ganache（GUI and port 7545）
+
+
+3. Compile and migrate（deploy）
+```
+truffle compile
+truffle migrate
+```
+
+4. Build Javascript and CSS
 ```
 $  yarn run webpack
 ```
 
 
-2. Start local server
+5. Start local server
 ```
 $ yarn run webpack-dev-server
 
